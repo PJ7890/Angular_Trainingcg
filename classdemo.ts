@@ -1,5 +1,5 @@
-const pi=3.14;
-class circle{
+export const pi=3.14;
+export class Circle{
     private radius:number;
 
     constructor(radius:number)
@@ -13,5 +13,5 @@ class circle{
     }
 }
 
-var obj=new circle(4);
-console.log(obj.getarea());
+//var obj=new circle(4);
+//console.log(obj.getarea());

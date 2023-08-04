@@ -1,12 +1,16 @@
-var pi = 3.14;
-var circle = /** @class */ (function () {
-    function circle(radius) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Circle = exports.pi = void 0;
+exports.pi = 3.14;
+var Circle = /** @class */ (function () {
+    function Circle(radius) {
         this.radius = radius;
     }
-    circle.prototype.getarea = function () {
-        return pi * this.radius * this.radius;
+    Circle.prototype.getarea = function () {
+        return exports.pi * this.radius * this.radius;
     };
-    return circle;
+    return Circle;
 }());
-var obj = new circle(4);
-console.log(obj.getarea());
+exports.Circle = Circle;
+//var obj=new circle(4);
+//console.log(obj.getarea());
